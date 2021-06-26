@@ -3,14 +3,14 @@
 
 #define BAUDRATE 38400
 
-// IRsend irsend; // PIN D3
+IRsend irsend; // PIN D3
 
 StaticJsonDocument<128> serialJson;
 DynamicJsonDocument data(128);
 
 void setup() {
   Serial.begin(BAUDRATE);
-  IrSender.setSendPin(3);
+  // IrSender.setSendPin(3);
 }
 
 void loop() {
